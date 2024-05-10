@@ -1,0 +1,14 @@
+<%- include('partials/header-main.ejs') %>
+<main>
+    <div class="result-container">
+        <div class="reaction">
+            <img id="reaction-img" src="../images/Reaction/<%= image %>.png">
+        </div>
+        <div class="quote-score">
+            <h1>Your Score: <%=score %></h1>
+            <p><%= quote %></p>
+            <button id="ans" class="btn ans"><a href="/main">Replay</a></button>
+        </div>
+    </div>
+</main>
+<%- include('partials/footer.ejs') %>

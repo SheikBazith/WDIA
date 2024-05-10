@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://localhost:3000/register? -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" id="mobile-simulator">
+        window.hasMobileFirstExtension = true;</script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDIA</title>
+    <link rel="icon" type="image/x-icon" href="./WDIA_files/logo.png">
+    <link rel="stylesheet" href="./WDIA_files/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="./WDIA_files/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="./WDIA_files/style.css">
+</head>
+<body>
+    
+
+
+<div class="container">
+    <img id="logo" src="./WDIA_files/logo.png">
+    <form action="http://localhost:3000/register" method="POST">
+    <div class="login-container">
+        <label for="username">
+            <input name="username" type="text" placeholder="Username" required="">
+        </label>
+        <label for="email">
+            <input name="email" type="email" placeholder="Email" required="">
+        </label>
+        <label for="password">
+            <input name="password" type="password" placeholder="Password" required="">
+        </label><br>
+        <p style="display: none;"></p>
+        <button type="submit" class="btn register">
+            Register
+        </button>
+    </div>
+    </form>
+    <form>
+        <button type="submit" formaction="/login" class="btn login">
+            Login
+        </button>
+    </form>
+</div>
+
+
+</body></html>

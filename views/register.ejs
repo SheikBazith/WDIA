@@ -1,0 +1,29 @@
+<%- include('partials/header.ejs') %>
+
+<div class="container">
+    <img id="logo" src="images/logo.png">
+    <form action="/register" method="POST">
+    <div class="login-container">
+        <label for="username">
+            <input name="username" type="text" placeholder="Username" required>
+        </label>
+        <label for="email">
+            <input name="email" type="email" placeholder="Email" required >
+        </label>
+        <label for="password">
+            <input name="password" type="password" placeholder="Password" required>
+        </label><br>
+        <p style="display: <%=visible%>;"><%=content%></p>
+        <button type="submit" class="btn register">
+            Register
+        </button>
+    </div>
+    </form>
+    <form>
+        <button type="submit" formaction="/login" class="btn login">
+            Login
+        </button>
+    </form>
+</div>
+
+<%- include('partials/footer.ejs') %>

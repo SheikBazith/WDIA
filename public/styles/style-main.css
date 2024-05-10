@@ -1,0 +1,250 @@
+@font-face {
+    font-family: "Techno";
+    src: url(font/Robtronika-4Bq8p.ttf);
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.container{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.year-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+   
+}
+.submit{
+    border: none;
+    color: white;
+    background-color: transparent;
+    border: 1px white solid;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    margin: 0.5rem;
+    font-family: 'Techno';
+    width: 10rem;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: white;
+    color: #fc4533;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 40px;
+}
+
+#poster{
+    width: 50%;
+}
+
+input{
+    border: 1px #fc4533 solid;
+    width: 13rem;
+    height: 2rem;
+    text-align: left;
+    border-radius: 5px;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    background-color: red;
+    width: 60%;
+    padding: 4rem 0 4rem 0;
+}
+
+.info{
+    width: 45%;
+    margin-top: 2rem;
+}
+
+.anime-img{
+    width: 50%;
+}
+
+h1{
+    color: white;
+    font-family: "Techno";
+    font-size: 22px;
+}
+
+p{
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+    margin: 0;
+}
+
+.btn{
+
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.ans{
+    background-color: transparent;
+    color: white;
+    border: 1px white solid;
+    margin-top: 1rem;
+
+}
+
+.ans:hover{
+    color: white;
+    background-color: #fc4533;
+    border: 1px white solid;
+}
+
+.logout{
+    background-color: transparent;
+    color: #fc4533;
+    border: 1px #fc4533 solid;
+    padding: 0.3rem 0.7rem 0.3rem 0.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.logout:hover{
+    color: white;
+    background-color: #fc4533;
+}
+
+.anime-img{
+    width: 300px;
+    margin-top: 1rem;
+}
+
+.quiz-container,.result-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+
+    background-color: #fc4533;
+    padding: 1rem;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.result-container{
+    flex-direction: row;
+    width: 70%;
+    gap: 1rem;
+}
+
+.score{
+    display: flex;
+    font-family: "Techno";
+    gap: 2rem;
+    padding: 0;
+}
+
+#reaction-img{
+    width: 300px;
+}
+
+.score p{
+    font-size: 8px;
+}
+
+.score :nth-child(1){
+    background-color: transparent;
+    padding: 1rem;
+    border: 1px white solid;
+}
+.score :nth-child(2){
+    background-color: transparent;
+    padding: 1rem;
+    border: 1px white solid;
+
+
+}
+
+
+
+
+
+@media only screen and (min-width: 200px) 
+and (max-width: 1060px){
+    .main-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        margin-top: 2rem;
+        min-height: 80vh;
+        width: 90%;
+    }
+    .info{
+        width: 100%;
+    
+    }
+    .quiz-container{
+        width: 90%;
+    }
+    
+    .anime-img{
+        width: 100%;
+    }
+    #poster{
+        width: 70%;
+    }
+    .anime-img{
+        width: 200px;
+    }
+    .result-container{
+        width: 80%;
+        flex-direction: column;
+        padding: 0 1rem 1rem 1rem;
+        gap: 1rem;
+    }
+    
+    .quote-score h1{
+       
+        font-size: 16px;
+    }
+   
+
+}

@@ -1,0 +1,25 @@
+<%- include('partials/header-main.ejs') %>
+<main>
+<div class="quiz-container">
+    <div class="score">
+        <p>Current Score: <%= totalScore %> </p>
+        <p>High Score: <%= highScore %> </p>
+    </div>
+    <p style="font-size: 16px;"><%=title %></p>
+    <img id="poster" src="<%= image %>">
+    <form method="POST" action="/main">
+    <div class="year-container">
+
+            <label for="year">
+                <input name="year" pattern="[0-9]{4}" maxlength="4" type="text" placeholder="Enter the Year" required>
+            </label>
+        <button type="submit" class="submit">
+            Submit
+        </button>
+        <p>Quiz: <%=totalQuestion%>/25 </p>
+    </div>
+</div>
+</form>
+</main>
+<script src="script/game.js"></script>
+<%- include('partials/footer.ejs') %>
